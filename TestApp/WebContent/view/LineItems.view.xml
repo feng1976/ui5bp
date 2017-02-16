@@ -1,0 +1,33 @@
+<core:View xmlns:core="sap.ui.core"
+		   xmlns="sap.m"
+		controllerName="TestApp.view.LineItems" >
+	<Page id="page"
+		  title="aaaa"
+		  showNavButton="true"
+		  navButtonPress="handleNavBack"
+		  >
+	  <footer>
+	  	<Bar>
+	  	</Bar>
+	  </footer>
+	  <content>
+	  	  <ObjectHeader
+	  	  	title="{ProductId}"
+	  	  	number="{GrossAmount}"
+	  	  	numberUnit="{CurrencyCode}"
+	  	  	>
+	  	    <attributes>
+	  	    	<ObjectAttribute text="{
+	  	    	  path: 'DeliveryDate',
+	  	    	  formatter: 'TestApp.util.Formatter.date'
+	  	    	  }" />
+	  	    		
+	  	    	<ObjectAttribute text="{
+	  	    	  path: 'Quantity',
+	  	    	  formatter: 'TestApp.util.Formatter.quantity'
+	  	    	}" />
+	  	    </attributes>
+	  	 </ObjectHeader>
+	  </content>
+	</Page>
+</core:View>
