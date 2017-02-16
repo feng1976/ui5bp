@@ -1,0 +1,10 @@
+Component-preload.js
+node_modules
+resources
+*.lock
+*.DS_Store
+*.swp
+*.out
+*.class
+/build
+
